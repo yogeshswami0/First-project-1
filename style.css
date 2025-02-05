@@ -1,0 +1,115 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(246, 248, 246);
+    color: #fff;
+    /* background-image: url("qrcodeN1.png");
+    background-repeat: no-repeat;
+    background-size: small;
+    background-position: center; 
+    padding: 10px 10px 10px 10px; */
+    
+}
+
+
+.container {
+    text-align: center;
+    background: #93e791;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    max-width: 100%;
+    background: transparent;
+}
+
+.container h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #050505;
+}
+
+
+.container input {
+    display: block;
+    height: 50px;
+    padding: 10px;
+    margin: 10px 0 20px;
+    width: 100%;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+.container button {
+    display: block;
+    height: 50px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #0a090a;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #08e416;
+}
+
+
+#imgbox {
+    width: 200px;
+    max-height: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 5px;
+    transition: max-height 0.5s ease;
+}
+
+#imgbox img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    object-fit: cover;
+}
+
+#imgbox.show-img {
+    max-height: 300px;
+    border: 1px solid #d1d1d1;
+    margin-top: 20px;
+}
+
+
+.error {
+    animation: shake 0.5s linear;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
